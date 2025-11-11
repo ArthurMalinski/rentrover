@@ -1,0 +1,271 @@
+﻿
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merch</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .navbar-top {
+      background-color: #2b2b2b;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    .navbar-top a {
+      color: red;
+      text-decoration: none;
+      margin-left: .75rem;
+    }
+    .navbar {
+      background-color: #1a1a1a;
+      border-bottom: 2px solid red;
+    }
+    .divider {
+      width: 2px;
+      height: 50px;
+      background-color: red;
+      margin: 0 1rem;
+    }
+    .search-box input {
+      background-color: #222;
+      border: 1px solid #444;
+      color: white;
+      border-radius: .4rem;
+      padding: .4rem .7rem;
+    }
+    .search-box button {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: .4rem .7rem;
+      border-radius: .4rem;
+      cursor: pointer;
+    }
+    .nav-menu {
+      background-color: #2b2b2b;
+    }
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: .75rem 1rem;
+      display: block;
+    }
+    .nav-menu a:hover {
+      color: red;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border: 2px solid red;
+      box-shadow: 0 0 10px rgba(255,0,0,0.2);
+    }
+    .card-title {
+      color: white;
+    }
+    .btn-danger {
+      background-color: red;
+      border: none;
+    }
+    .btn-danger:hover {
+      background-color: darkred;
+    }
+    footer {
+      background-color: #111;
+      border-top: 2px solid red;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Topo -->
+  <div class="navbar-top text-end text-white">
+    <span><strong>Contato</strong></span>
+    <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <!-- Cabeçalho -->
+  <nav class="navbar py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+      <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <div>
+          <h1 class="text-danger fw-bold m-0">Rent Rover</h1>
+          <p class="m-0">Alugue seu sonho</p>
+        </div>
+        <div class="divider"></div>
+        <img src="img/Logo.png" alt="Logo" class="ms-2" style="width:80px;">
+      </div>
+
+      <div class="d-flex align-items-center justify-content-center gap-3">
+        <form class="search-box d-flex" onsubmit="searchCars(); return false;">
+          <input type="text" id="search" placeholder="Pesquisar...">
+          <button type="submit">🔍</button>
+        </form>
+        <a href="Login.html" class="text-white" title="Entrar ou criar conta">
+          <i class="fas fa-user-circle fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu -->
+  <ul class="nav nav-menu justify-content-center flex-wrap">
+    <li class="nav-item"><a href="Página inicial.html" class="nav-link"><i class="fas fa-home"></i> Página Inicial</a></li>
+    <li class="nav-item"><a href="Todos os carros.html" class="nav-link"><i class="fas fa-car"></i> Todos os Carros</a></li>
+    <li class="nav-item"><a href="Merch (Loja).html" class="nav-link active text-danger"><i class="fas fa-tags"></i> Merchandise</a></li>
+    <li class="nav-item"><a href="Sobre nós.html" class="nav-link"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+  </ul>
+
+  <!-- Conteúdo -->
+  <main class="container my-5">
+    <h2 class="text-center text-danger mb-4">Merchandise Oficial</h2>
+
+    <div class="row justify-content-center g-4">
+      <!-- Produto -->
+      <div class="col-sm-10 col-md-6 col-lg-3">
+        <div class="card text-center p-2">
+          <img src="img/merch/boné frente.webp" class="card-img-top rounded" alt="Boné Ferrari Frente">
+          <img src="img/merch/boné trás.webp" class="card-img-top rounded mt-2" alt="Boné Ferrari Costas">
+          <div class="card-body">
+            <h5>Boné Ferrari</h5>
+            <p class="text-light">Tamanho único</p>
+            <p class="fw-bold text-white">R$ 250,00</p>
+            <a href="Compra bem sucedida.html" class="btn btn-danger">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-3">
+        <div class="card text-center p-2">
+          <img src="img/merch/camisa ferrari frente.webp" class="card-img-top rounded" alt="Camisa Ferrari Frente">
+          <img src="img/merch/camis aferrari costas.webp" class="card-img-top rounded mt-2" alt="Camisa Ferrari Costas">
+          <div class="card-body">
+            <h5>Camisa Ferrari F40</h5>
+            <p class="text-light">Tamanho único</p>
+            <p class="fw-bold text-white">R$ 180,00</p>
+            <a href="Compra bem sucedida.html" class="btn btn-danger">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-3">
+        <div class="card text-center p-2">
+          <img src="img/merch/Moletom chevy.jpg" class="card-img-top rounded" alt="Moletom Chevy Frente">
+          <img src="img/merch/Moletom chevy costas.jpg" class="card-img-top rounded mt-2" alt="Moletom Chevy Costas">
+          <div class="card-body">
+            <h5>Moletom Chevy Racing</h5>
+            <p class="text-light">Tamanho único</p>
+            <p class="fw-bold text-white">R$ 350,00</p>
+            <a href="Compra bem sucedida.html" class="btn btn-danger">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-3">
+        <div class="card text-center p-2">
+          <img src="img/merch/FerrariFront.webp" class="card-img-top rounded" alt="Moletom Ferrari Frente">
+          <img src="img/merch/Ferrariback.webp" class="card-img-top rounded mt-2" alt="Moletom Ferrari Costas">
+          <div class="card-body">
+            <h5>Moletom Ferrari</h5>
+            <p class="text-light">Tamanho único</p>
+            <p class="fw-bold text-white">R$ 420,00</p>
+            <a href="Compra bem sucedida.html" class="btn btn-danger">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-3">
+        <div class="card text-center p-2">
+          <img src="img/merch/Jaqueta porsche.webp" class="card-img-top rounded" alt="Jaqueta Porsche Frente">
+          <img src="img/merch/Jaqueta porsche costas.webp" class="card-img-top rounded mt-2" alt="Jaqueta Porsche Costas">
+          <div class="card-body">
+            <h5>Jaqueta Porsche Oficial</h5>
+            <p class="text-light">Tamanho único</p>
+            <p class="fw-bold text-white">R$ 550,00</p>
+            <a href="Compra bem sucedida.html" class="btn btn-danger">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container d-flex flex-column flex-lg-row justify-content-around text-center text-lg-start">
+      <div>
+        <h4 class="text-danger">Rent Rover</h4>
+        <p>Alugue seu sonho desde 1945</p>
+      </div>
+      <div>
+        <h4 class="text-danger">Links úteis</h4>
+        <ul class="list-unstyled">
+          <li><a href="Página inicial.html">Página Inicial</a></li>
+          <li><a href="Todos os carros.html">Todos os carros</a></li>
+          <li><a href="Merch (Loja).html">Merchandise</a></li>
+          <li><a href="Sobre nós.html">Sobre nós</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-danger">Contato</h4>
+        <p>contato@rentrover.com.br</p>
+        <p>+55 (54) 1234-5678</p>
+        <p>Gramado - RS</p>
+      </div>
+      <div>
+        <h4 class="text-danger">Siga-nos</h4>
+        <p>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+        </p>
+      </div>
+    </div>
+    <p class="mt-3">© 2025 Rent Rover. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function searchCars() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const destinos = {
+        corvette: 'Corvette.html',
+        ferrari: 'Ferrari F40.html',
+        f40: 'Ferrari F40.html',
+        mustang: 'Mustang Dark Horse.html',
+        porsche: 'Porsche GT3 rs.html',
+        gt3: 'Porsche GT3 rs.html',
+        camiseta: 'Merch (Loja).html',
+        moletom: 'Merch (Loja).html',
+        boné: 'Merch (Loja).html',
+        bone: 'Merch (Loja).html'
+      };
+      for (let key in destinos) {
+        if (input.includes(key)) return window.location.href = destinos[key];
+      }
+      alert('Nenhum resultado encontrado.');
+    }
+  </script>
+
+</body>
+</html>
