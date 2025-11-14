@@ -8,45 +8,53 @@
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="navbar-top">
-      <div class="contato">
-        <span><strong>Contato</strong></span>
-        <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
+<header>
 
-<div class="navbar-middle">
-  <div class="marca">
-    <div class="slogan">
-      <h1>Rent Rover</h1>
-      <p>Alugue seu sonho</p>
-    </div>
-    <div class="divider"></div>
-    <img class="logo" src="img/Logo.png" alt="Logo">
+  <!-- Topo -->
+  <div class="navbar-top text-end text-white" style="background-color:#2b2b2b; padding:0.5rem 1rem; font-size:0.9rem;">
+    <span><strong>Contato</strong></span>
+    <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
+    <a href="#" style="color:red; margin-left:.75rem;"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" style="color:red; margin-left:.75rem;"><i class="fab fa-instagram"></i></a>
   </div>
 
-  <div class="barra-direita">
-    <form class="search-box" onsubmit="searchCars(); return false;">
-      <input type="text" id="search" placeholder="Pesquisar...">
-      <button type="submit">🔍</button>
-    </form>
-        <a href="Login.html" class="login-icon" title="Entrar ou criar conta">
-          <i class="fas fa-user-circle"></i>
+  <!-- Cabeçalho -->
+  <nav class="navbar py-3" style="background-color:#1a1a1a; border-bottom:2px solid red;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+
+      <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <div>
+          <h1 class="text-danger fw-bold m-0">Rent Rover</h1>
+          <p class="m-0">Alugue seu sonho</p>
+        </div>
+        <div class="divider" style="width:2px; height:50px; background:red; margin:0 1rem;"></div>
+        <img src="img/Logo.png" alt="Logo" class="ms-2" style="width:80px;">
+      </div>
+
+      <div class="d-flex align-items-center justify-content-center gap-3">
+        <form class="search-box d-flex" onsubmit="searchCars(); return false;">
+          <input type="text" id="search" placeholder="Pesquisar..." style="background:#222; border:1px solid #444; color:white; padding:.4rem .7rem; border-radius:.4rem;">
+          <button type="submit" style="background:red; border:none; color:white; padding:.4rem .7rem; border-radius:.4rem; cursor:pointer;">🔍</button>
+        </form>
+
+        <a href="Login.html" class="text-white" title="Entrar ou criar conta">
+          <i class="fas fa-user-circle fa-2x"></i>
         </a>
+      </div>
+
     </div>
-</div>
+  </nav>
 
+  <!-- Menu -->
+  <ul class="nav nav-menu justify-content-center flex-wrap" style="background:#2b2b2b;">
+    <li class="nav-item"><a href="index.html" class="nav-link" style="color:white; font-weight:bold;"><i class="fas fa-home"></i> Página Inicial</a></li>
+    <li class="nav-item"><a href="Todos os carros.html" class="nav-link" style="color:white; font-weight:bold;"><i class="fas fa-car"></i> Todos os Carros</a></li>
+    <li class="nav-item"><a href="Merch (Loja).html" class="nav-link" style="color:white; font-weight:bold;"><i class="fas fa-tags"></i> Merchandise</a></li>
+    <li class="nav-item"><a href="Sobre nós.html" class="nav-link" style="color:white; font-weight:bold;"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+  </ul>
 
-<ul class="nav-menu">
-  <li><a href="index.html"><i class="fas fa-home"></i> Página Inicial</a></li>
-  <li><a href="Todos os carros.html"><i class="fas fa-car"></i> Todos os Carros</a></li>
-  <li><a href="Merch (Loja).html"><i class="fas fa-tags"></i> Merchandise</a></li>
-  <li><a href="Sobre nós.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
-</ul>
 </header>
+
 
   <main class="container">
 
@@ -150,5 +158,6 @@
 
 </body>
 </html>
+
 
 
