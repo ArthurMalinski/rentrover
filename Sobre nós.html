@@ -1,102 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sobre Nós</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Sobre nós</title>
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    body {
-      background-color: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-    .navbar-top {
-      background-color: #2b2b2b;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-    }
-    .navbar-top a {
-      color: red;
-      text-decoration: none;
-      margin-left: .75rem;
-    }
-    .navbar {
-      background-color: #1a1a1a;
-      border-bottom: 2px solid red;
-    }
-    .divider {
-      width: 2px;
-      height: 50px;
-      background-color: red;
-      margin: 0 1rem;
-    }
-    .search-box input {
-      background-color: #222;
-      border: 1px solid #444;
-      color: white;
-      border-radius: .4rem;
-      padding: .4rem .7rem;
-    }
-    .search-box button {
-      background-color: red;
-      border: none;
-      color: white;
-      padding: .4rem .7rem;
-      border-radius: .4rem;
-      cursor: pointer;
-    }
-    .nav-menu {
-      background-color: #2b2b2b;
-    }
-    .nav-menu a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: .75rem 1rem;
-      display: block;
-    }
-    .nav-menu a:hover {
-      color: red;
-    }
-    article {
-      background-color: #1a1a1a;
-      border: 2px solid red;
-      border-radius: 8px;
-      padding: 2rem;
-      box-shadow: 0 0 15px rgba(255,0,0,0.15);
-    }
-    article h2 {
-      color: red;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    article img {
-      border: 3px solid red;
-      border-radius: 6px;
-    }
-    footer {
-      background-color: #111;
-      border-top: 2px solid red;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-    footer a:hover {
-      color: red;
-    }
-  </style>
 </head>
-
 <body>
 
-  <!-- Topo -->
-  <div class="navbar-top text-end text-white">
-    <span><strong>Contato</strong></
+  <header class="navbar">
+    <div class="navbar-top">
+      <div class="contato">
+        <span><strong>Contato</strong></span>
+        <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+<div class="navbar-middle">
+  <div class="marca">
+    <div class="slogan">
+      <h1>Rent Rover</h1>
+      <p>Alugue seu sonho</p>
+    </div>
+    <div class="divider"></div>
+    <img class="logo" src="img/Logo.png" alt="Logo">
+  </div>
+
+  <div class="barra-direita">
+    <form class="search-box" onsubmit="searchCars(); return false;">
+      <input type="text" id="search" placeholder="Pesquisar...">
+      <button type="submit">🔍</button>
+    </form>
+        <a href="Login.html" class="login-icon" title="Entrar ou criar conta">
+          <i class="fas fa-user-circle"></i>
+        </a>
+  </div>
+</div>
+
+
+<ul class="nav-menu">
+  <li><a href="Página inicial.html"><i class="fas fa-home"></i> Página Inicial</a></li>
+  <li><a href="Todos os carros.html"><i class="fas fa-car"></i> Todos os Carros</a></li>
+  <li><a href="Merch (Loja).html"><i class="fas fa-tags"></i> Merchandise</a></li>
+  <li><a href="Sobre nós.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+</ul>
+</header>
+
+  <main class="container">
+
+
+    <article class="place">
+      <h2><em>Nossa história</em></h2>
+<figure style="float: left; margin: 10px 20px 10px 0;">
+  <img src="img/Luigi.png" alt="Fundador" style="width: 300px; border: 3px solid #ff0000; border-radius: 4px;">
+  <figcaption style="font-size: 0.9em; color: #ccc; text-align: center; margin-top: 5px;">
+    Luigi Malinski — 1946
+  </figcaption>
+</figure>
+      <p>A Rent Rover nasceu em 1945, no coração da charmosa cidade de Gramado, RS, logo após o fim da Segunda Guerra Mundial.
+        Fundada por Luigi Malinski, um imigrante polonês apaixonado por automóveis e mecânica de precisão, a empresa começou como uma pequena oficina dedicada à restauração de veículos clássicos trazidos da Europa. Com o tempo, a paixão de Luigi pelos motores e pelo design automotivo contagiou os moradores da região.        
+        Nos anos 1950 e 60, a Rent Rover tornou-se referência no restauro de carros esportivos e de luxo, atraindo colecionadores e entusiastas de todo o sul do Brasil. O diferencial sempre foi o cuidado artesanal e a atenção aos detalhes.        
+        Com a expansão do turismo em Gramado, a família Malinski percebeu uma oportunidade: em 1975, transformaram a Rent Rover em uma locadora de veículos clássicos e esportivos de alto padrão, permitindo que visitantes e moradores pudessem não apenas admirar, mas viver a experiência de dirigir um carro lendário.        
+        Hoje, <mark>a Rent Rover é uma das mais respeitadas locadoras premium do Brasil</mark>, oferecendo modelos icônicos como Ferrari F40, Corvette ZR1, Porsche GT3 RS, Mustang Dark Horse, entre outros.       
+        Situada na deslumbrante paisagem da Serra Gaúcha, a empresa mantém seu espírito familiar e seu lema:
+        "Alugue seu sonho."        
+        Cada cliente que passa pela Rent Rover não leva apenas um carro leva uma história para contar.
+      </p>
+    </article>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="footer-container">
+  
+      <div class="footer-column">
+        <h4>Rent Rover</h4>
+        <p>Alugue seu sonho desde 1945</p>
+      </div>
+  
+   <div class="footer-column">
+    <h4>Links úteis</h4>
+    <ul>
+      <li><a href="Página inicial.html">Página Inicial</a></li>
+      <li><a href="Todos os carros.html">Todos os carros</a></li>
+      <li><a href="Merch (Loja).html">Merchandise</a></li>
+      <li><a href="Sobre nós.html">Sobre nós</a></li>
+    </ul>
+   </div>
+  
+      <div class="footer-column">
+        <h4>Contato</h4>
+        <p>contato@rentrover.com.br</p>
+        <p>+55 (54) 1234-5678</p>
+        <p>Gramado - RS</p>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Siga-nos</h4>
+        <p>
+          <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQwNCe_sdDjMm6TuhW8MW0YFLpjCbRr1LWA&s"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="https://64.media.tumblr.com/9f6565aaef4b8b80101a5ac328dbf66b/tumblr_pg5hk0cyMj1tpj79b_1280.jpg"><i class="fab fa-youtube"></i> YouTube</a>
+        </p>
+      </div>
+  
+    </div>
+  
+    <p style="margin-top: 20px;">© 2025 Rent Rover. Todos os direitos reservados.</p>
+  </footer>
+
+<script>
+  function searchCars() {
+      var input = document.getElementById('search').value.toLowerCase();
+  
+      if (input.includes('corvette')) {
+          window.location.href = 'Corvette.html';
+      } else if (input.includes('ferrari') || input.includes('f40')) {
+          window.location.href = 'Ferrari F40.html';
+      } else if (input.includes('mustang')) {
+          window.location.href = 'Mustang Dark Horse.html';
+      } else if (input.includes('porsche') || input.includes('gt3')) {
+          window.location.href = 'Porsche GT3 rs.html';
+      } else if (
+          input.includes('camiseta') ||
+          input.includes('moletom') ||
+          input.includes('boné') ||
+          input.includes('bone')
+      ) {
+          window.location.href = 'Merch (Loja).html';
+      } else {
+          alert('Nenhum resultado encontrado.');
+      }
+  }
+</script>
+
+</body>
+</html>
