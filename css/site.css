@@ -1,0 +1,253 @@
+/* ==========================================================
+   Rent Rover — header e footer compartilhados (todas as páginas)
+   Visual idêntico ao da página inicial (index.html).
+   Não depende de Bootstrap: funciona em qualquer página.
+   ========================================================== */
+
+/* Base comum (iguala o fundo e tira o espaçamento do body do estilo.css) */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.site-header,
+.site-footer {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.site-header *,
+.site-header *::before,
+.site-header *::after,
+.site-footer *,
+.site-footer *::before,
+.site-footer *::after {
+  box-sizing: border-box;
+}
+
+/* Container centralizado (mesmas larguras do Bootstrap) */
+.site-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 .75rem;
+}
+@media (min-width: 576px)  { .site-container { max-width: 540px; } }
+@media (min-width: 768px)  { .site-container { max-width: 720px; } }
+@media (min-width: 992px)  { .site-container { max-width: 960px; } }
+@media (min-width: 1200px) { .site-container { max-width: 1140px; } }
+@media (min-width: 1400px) { .site-container { max-width: 1320px; } }
+
+/* ---------- Faixa de contato (topo) ---------- */
+.site-topbar {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  text-align: right;
+}
+.site-topbar a {
+  color: red;
+  text-decoration: none;
+  margin-left: .75rem;
+}
+
+/* ---------- Cabeçalho ---------- */
+.site-navbar {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid red;
+  padding: 1rem;
+}
+.site-navbar .site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.site-brand h1 {
+  margin: 0;
+  padding: 0;
+  color: #dc3545;
+  font-weight: 700;
+  font-size: calc(1.375rem + 1.5vw);
+  line-height: 1.2;
+}
+.site-brand p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-style: normal;
+  color: #fff;
+}
+.site-divider {
+  width: 2px;
+  height: 50px;
+  background-color: red;
+  margin: 0 1rem;
+}
+.site-logo {
+  width: 80px;
+  height: auto;
+  margin-left: .5rem;
+  display: block;
+}
+
+.site-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.site-search {
+  display: flex;
+  margin: 0;
+  background: none;
+  max-width: none;
+  width: auto;
+  border-radius: 0;
+  overflow: visible;
+}
+.site-search input {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: .4rem;
+  padding: .4rem .7rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: auto;
+  flex: none;
+  margin: 0;
+}
+.site-search input::placeholder { color: #999; }
+.site-search button {
+  background-color: red;
+  border: none;
+  color: #fff;
+  padding: .4rem .7rem;
+  border-radius: .4rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.site-user {
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+}
+.site-user i {
+  font-size: 2em;
+  color: #fff;
+  transition: none;
+}
+.site-user:hover,
+.site-user:hover i { color: #fff; }
+
+@media (min-width: 768px) {
+  .site-navbar .site-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  .site-brand { margin-bottom: 0; }
+}
+@media (min-width: 1200px) {
+  .site-brand h1 { font-size: 2.5rem; }
+}
+
+/* ---------- Menu principal ---------- */
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
+  border-top: 0;
+  gap: 0;
+}
+.site-menu li { margin: 0; padding: 0; }
+.site-menu a {
+  display: block;
+  padding: .75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.site-menu a:hover { color: red; }
+.site-menu a i { margin-right: 0; }
+
+/* ---------- Rodapé ---------- */
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  border-top: 2px solid red;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+.site-footer .site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.site-footer h4 {
+  margin: 0 0 .5rem;
+  padding: 0;
+  color: #dc3545;
+  font-weight: 500;
+  font-size: calc(1.275rem + .3vw);
+  line-height: 1.2;
+}
+.site-footer p {
+  margin: 0 0 1rem;
+  padding: 0;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+.site-footer ul {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.site-footer li { margin: 0; padding: 0; }
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.site-footer a:hover { color: red; text-decoration: none; }
+.site-footer .site-copy { margin: 1rem 0 0; }
+
+@media (min-width: 992px) {
+  .site-footer .site-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  .site-footer p { text-align: left; }
+  .site-footer .site-copy { text-align: center; }
+}
+@media (min-width: 1200px) {
+  .site-footer h4 { font-size: 1.5rem; }
+}

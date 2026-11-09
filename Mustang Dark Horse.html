@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mustang Dark Horse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <!-- Cabeçalho (padrão do site) -->
+<header class="site-header">
+  <div class="site-topbar">
+    <span><strong>Contato</strong></span>
+    <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <nav class="site-navbar">
+    <div class="site-container">
+      <div class="site-brand">
+        <div>
+          <h1>Rent Rover</h1>
+          <p>Alugue seu sonho</p>
+        </div>
+        <div class="site-divider"></div>
+        <img src="img/Logo.png" alt="Logo" class="site-logo">
+      </div>
+
+      <div class="site-actions">
+        <form class="site-search" onsubmit="searchCars(); return false;">
+          <input type="text" id="search" placeholder="Pesquisar...">
+          <button type="submit">🔍</button>
+        </form>
+        <a href="Login.html" class="site-user" title="Entrar ou criar conta">
+          <i class="fas fa-user-circle"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="site-menu">
+    <li><a href="index.html"><i class="fas fa-home"></i> Página Inicial</a></li>
+    <li><a href="Todos os carros.html"><i class="fas fa-car"></i> Todos os Carros</a></li>
+    <li><a href="Merch (Loja).html"><i class="fas fa-tags"></i> Merchandise</a></li>
+    <li><a href="Sobre nós.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+  </ul>
+</header>
+
+<main class="container my-5">
+    <article class="card bg-secondary p-4 text-white">
+      <h2 class="text-center mb-4"><em>Mustang Dark Horse</em></h2>
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-3 mb-md-0">
+          <video class="rounded border border-danger" width="100%" controls loop poster="img/Mustang.jpg">
+            <source src="Vídeos/mustange.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo em HTML5.
+          </video>
+        </div>
+        <div class="col-md-6">
+          <p>
+            O novo Mustang Dark Horse é o mais obscuro e ameaçador dos muscle cars modernos.
+            Seu motor 5.0L V8 Coyote libera um rugido primitivo, com um visual sombrio e agressivo.
+            Capô com respiradores, detalhes black piano, rodas de pista. O Dark Horse <mark>combina tradição americana com um toque de pura maldade</mark>.
+            É o cavalo selvagem que todos querem domar... mas poucos conseguirão.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-4 text-center">
+        <label for="plano" class="fw-bold mb-2 d-block">Escolha o plano de aluguel:</label>
+        <select id="plano" name="plano" class="form-select w-auto mx-auto text-dark fw-semibold">
+          <option value="5km">5 km — R$ 500,00</option>
+          <option value="10km">10 km — R$ 1.120,00</option>
+          <option value="1dia">1 dia completo — R$ 6.000,00</option>
+        </select>
+        <a href="Compra bem sucedida.html" class="btn btn-danger mt-3 px-4 py-2">Alugar agora</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Rodapé (padrão do site) -->
+<footer class="site-footer">
+  <div class="site-container">
+    <div>
+      <h4>Rent Rover</h4>
+      <p>Alugue seu sonho desde 1945</p>
+    </div>
+    <div>
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="Todos os carros.html">Todos os carros</a></li>
+        <li><a href="Merch (Loja).html">Merchandise</a></li>
+        <li><a href="Sobre nós.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>contato@rentrover.com.br</p>
+      <p>+55 (54) 1234-5678</p>
+      <p>Gramado - RS</p>
+    </div>
+    <div>
+      <h4>Siga-nos</h4>
+      <p>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      </p>
+    </div>
+  </div>
+  <p class="site-copy">© 2025 Rent Rover. Todos os direitos reservados.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="js/site.js"></script>
+</body>
+</html>

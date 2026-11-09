@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <!-- Cabeçalho (padrão do site) -->
+<header class="site-header">
+  <div class="site-topbar">
+    <span><strong>Contato</strong></span>
+    <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <nav class="site-navbar">
+    <div class="site-container">
+      <div class="site-brand">
+        <div>
+          <h1>Rent Rover</h1>
+          <p>Alugue seu sonho</p>
+        </div>
+        <div class="site-divider"></div>
+        <img src="img/Logo.png" alt="Logo" class="site-logo">
+      </div>
+
+      <div class="site-actions">
+        <form class="site-search" onsubmit="searchCars(); return false;">
+          <input type="text" id="search" placeholder="Pesquisar...">
+          <button type="submit">🔍</button>
+        </form>
+        <a href="Login.html" class="site-user" title="Entrar ou criar conta">
+          <i class="fas fa-user-circle"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="site-menu">
+    <li><a href="index.html"><i class="fas fa-home"></i> Página Inicial</a></li>
+    <li><a href="Todos os carros.html"><i class="fas fa-car"></i> Todos os Carros</a></li>
+    <li><a href="Merch (Loja).html"><i class="fas fa-tags"></i> Merchandise</a></li>
+    <li><a href="Sobre nós.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+  </ul>
+</header>
+
+<main class="container my-5">
+    <section class="card bg-secondary text-light p-4 mx-auto" style="max-width: 500px;">
+      <h2 class="text-center mb-4">Login na sua conta</h2>
+
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="sobrenome" class="form-label">Sobrenome:</label>
+          <input type="text" id="sobrenome" class="form-control" placeholder="Seu sobrenome" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone:</label>
+          <input type="tel" id="telefone" class="form-control" placeholder="(xx) xxxxx-xxxx" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" class="form-control" placeholder="Seu email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha:</label>
+          <input type="password" id="senha" class="form-control" placeholder="Sua senha" required>
+        </div>
+
+        <div class="text-center">
+          <a href="E-mail registrado.html" class="btn btn-danger px-4 py-2">Registrar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé (padrão do site) -->
+<footer class="site-footer">
+  <div class="site-container">
+    <div>
+      <h4>Rent Rover</h4>
+      <p>Alugue seu sonho desde 1945</p>
+    </div>
+    <div>
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="Todos os carros.html">Todos os carros</a></li>
+        <li><a href="Merch (Loja).html">Merchandise</a></li>
+        <li><a href="Sobre nós.html">Sobre nós</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>contato@rentrover.com.br</p>
+      <p>+55 (54) 1234-5678</p>
+      <p>Gramado - RS</p>
+    </div>
+    <div>
+      <h4>Siga-nos</h4>
+      <p>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+      </p>
+    </div>
+  </div>
+  <p class="site-copy">© 2025 Rent Rover. Todos os direitos reservados.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="js/site.js"></script>
+</body>
+</html>
